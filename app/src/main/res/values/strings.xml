@@ -1,0 +1,7 @@
+<resources>
+    <!-- Change this to your desired app name -->
+    <string name="app_name">GeoMute</string>
+
+    <!-- Your existing Maps API key -->
+    <string name="google_maps_key">AIzaSyAAAlOZuE6qJ4f-f1N7kd5cIQhRH5lne6I</string>
+</resources>
