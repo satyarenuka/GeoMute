@@ -23,7 +23,8 @@ class CallReceiver : BroadcastReceiver() {
     }
 
     private fun isInsideGeofence(context: Context): Boolean {
-        val prefs = context.getSharedPreferences("GEOFENCE_PREFS", Context.MODE_PRIVATE)
+        val prefs = context.getSharedPreferences("emergency_contacts", Context.MODE_PRIVATE)
+
         return prefs.getBoolean("inside_geofence", false)
     }
 
@@ -76,7 +77,7 @@ class CallReceiver : BroadcastReceiver() {
             }
 
             TelephonyManager.EXTRA_STATE_IDLE -> {
-                if (getEmergencyFlag(context) && isInsideGeofence(context)) {
+                if (getEmergencyFlag(context)) {
                     Toast.makeText(
                         context,
                         "Call ended – returning to silent mode",

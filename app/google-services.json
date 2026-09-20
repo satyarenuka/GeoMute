@@ -1,26 +1,44 @@
 {
   "project_info": {
-    "project_number": "575703321187",
-    "project_id": "geomute-sahe",
-    "storage_bucket": "geomute-sahe.firebasestorage.app"
+    "project_number": "1084291227099",
+    "project_id": "geomute-45c10",
+    "storage_bucket": "geomute-45c10.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:575703321187:android:37c37cc0a7e2cf76f98656",
+        "mobilesdk_app_id": "1:1084291227099:android:dccb43b6d56b371abd5bfe",
         "android_client_info": {
           "package_name": "com.example.geofencing"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1084291227099-dvlavfn0ebsvf721qo6m178vsf26fn08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.geofencing",
+            "certificate_hash": "9026af4be4984f7c0fdb18ed3dba687161920d7f"
+          }
+        },
+        {
+          "client_id": "1084291227099-6eltrd4tvehrjoastvco0vr0q5ufhm7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyBB-JfN_w_jvo4cRhhBJSECDNxe-u5zViU"
+          "current_key": "AIzaSyCFePfRS5r7PtkRNNdMM4uqMQdJlEy8JQM"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084291227099-6eltrd4tvehrjoastvco0vr0q5ufhm7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

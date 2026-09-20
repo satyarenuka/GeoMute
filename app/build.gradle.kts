@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
-    kotlin("android")
+    id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
+
 }
 
 android {
@@ -9,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.geofencing"
-        minSdk = 23
+        minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -48,17 +50,19 @@ dependencies {
     // ✅ Compose BOM
     implementation(platform("androidx.compose:compose-bom:2023.10.01"))
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.10.01"))
+    // Add this in dependencies {}
+    implementation("androidx.compose.ui:ui-text:1.6.0")
 
     // ✅ Core AndroidX
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.appcompat:appcompat:1.6.1")
 
     // ✅ Jetpack Compose UI
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.foundation:foundation")
+    implementation("androidx.compose.ui:ui:1.6.0")
+    implementation("androidx.compose.foundation:foundation:1.6.0")
     implementation("androidx.compose.material3:material3:1.2.0")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    debugImplementation("androidx.compose.ui:ui-tooling")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.6.0")
+    debugImplementation("androidx.compose.ui:ui-tooling:1.6.0")
 
     // ✅ Compose Lifecycle
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
@@ -66,7 +70,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
 
     // ✅ Compose Activity
-    implementation("androidx.activity:activity-compose:1.8.2")
+    implementation("androidx.activity:activity-compose:1.9.0")
 
     // ✅ Google Maps & Geofencing
 
@@ -79,6 +83,14 @@ dependencies {
     implementation ("com.google.android.gms:play-services-location:21.0.1")
     implementation ("androidx.compose.runtime:runtime-livedata:1.6.8")
     implementation ("com.google.android.libraries.places:places:3.5.0")
+    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+    implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-analytics-ktx")
+    implementation("com.google.android.gms:play-services-auth:21.1.0")
+    implementation("com.google.firebase:firebase-firestore-ktx")
+
+
+
 
 
     // ✅ Testing

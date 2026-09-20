@@ -4,4 +4,6 @@
 
     <!-- Your existing Maps API key -->
     <string name="google_maps_key">AIzaSyAAAlOZuE6qJ4f-f1N7kd5cIQhRH5lne6I</string>
+    <string name="default_web_client_id">1088828288451-jua180halnc9aif5aoibqpgsu9rt50qg.apps.googleusercontent.com.apps.googleusercontent.com</string>
+
 </resources>
